@@ -36,9 +36,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Initialize News API - Updated
+# Initialize News API
 try:
-    newsapi_key = os.getenv('NEWS_API_KEY') or '352eb85344904bc389d8f2facb49fdd3'  # Fallback to direct key
+    newsapi_key = os.getenv('NEWS_API_KEY') or 'Add Your NewsAPI'  # Fallback to direct key
     if newsapi_key:
         newsapi = NewsApiClient(api_key=newsapi_key)
     else:
@@ -527,5 +527,5 @@ Advanced AI-powered market analysis tool providing:
 # Add watermark
 st.sidebar.markdown("---")
 st.sidebar.markdown("""
-<small>Made with ❤️ using Streamlit | [Report Issues](https://github.com/yourrepo/issues)</small>
+<small>Made with ❤️ using Streamlit | [Report Issues](https://github.com/HafizullahKhokhar1/Crypto-and-Stock-Market-Predictor/issues)</small>
 """, unsafe_allow_html=True)
